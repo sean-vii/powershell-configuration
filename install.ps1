@@ -119,8 +119,7 @@ if (-not $SkipFonts) {
     } else {
         $regPath = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts'
         $existingFont = Get-ItemProperty -Path $regPath -ErrorAction SilentlyContinue |
-            Select-Object -ExpandProperty PSObject |
-            ForEach-Object { $_.Properties } |
+            ForEach-Object { $_.PSObject.Properties } |
             Where-Object { $_.Name -like '0xProto*' } |
             Select-Object -First 1
 
