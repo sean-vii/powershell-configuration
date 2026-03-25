@@ -1,0 +1,22 @@
+# Starship configuration
+# Documentation: https://starship.rs/config/
+#
+# This file intentionally uses Starship defaults.
+# Uncomment and modify sections below to customize your prompt.
+
+# [character]
+# success_symbol = "[>](bold green)"
+# error_symbol = "[x](bold red)"
+
+# [directory]
+# truncation_length = 3
+# truncate_to_repo = true
+
+# [git_branch]
+# symbol = " "
+
+# [nodejs]
+# symbol = " "
+
+# [python]
+# symbol = " "
